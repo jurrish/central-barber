@@ -34,6 +34,13 @@ class HeroCarousel extends React.Component {
     return this.setState({ imageIndex: currentIndex })
   }
 
+  prevImage(){
+    let currentIndex = this.state.imageIndex;
+    currentIndex--;
+    console.log('decrement index ===> ', currentIndex);
+    return this.setState({ imageIndex: currentIndex })
+  }
+
   loadImages() {
     let newImagesArray = [];
     newImagesArray.push(img1, img2, img3);
@@ -44,8 +51,9 @@ class HeroCarousel extends React.Component {
     // { this.loadImages() }
     return(
       <div className='hero-carousel-div'>
-        <button onClick={ this.nextImage.bind(this) }> load images first, then the rendered images in a carousel below </button>
+        <button onClick={ this.nextImage.bind(this) }> increment </button>
         <img src={ this.state.imagesArray[this.state.imageIndex] } />
+        <button onClick={ this.prevImage.bind(this) }> decrement </button>
       </div>
     )
   }
