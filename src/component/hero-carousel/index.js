@@ -1,4 +1,6 @@
 import React from 'react';
+//
+// import img from '../../../resources/carousel-pics/centralbarber/logo.jpg'
 
 import './_hero-carousel.scss';
 
@@ -17,7 +19,8 @@ class HeroCarousel extends React.Component {
   render(){
     return(
       <div className='hero-carousel-div'>
-        <p> some photo content </p>
+        <p> brap </p>
+        <img src={ require("./carousel-1.jpg") } />
       </div>
     )
   }

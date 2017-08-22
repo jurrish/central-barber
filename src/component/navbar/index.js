@@ -10,7 +10,8 @@ class Navbar extends React.Component {
         <p> navbar component </p>
         <ul>
           <li> About Us </li>
-          <li> Book Us! </li>
+          <li> Book an Appointment </li>
+          <li> GPS US </li>
         </ul>
       </div>
     )

@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 //app modules
+import Header from './component/header/index.js';
 import AboutContainer from './component/about-container/index.js';
 import HeroCarousel from './component/hero-carousel/index.js';
 import Footer from './component/footer/index.js';
@@ -39,7 +40,8 @@ class App extends React.Component {
 
   render () {
     return (
-      <main>
+      <main className='main-div'>
+        <Header />
         <Navbar />
         <p> Central Barber </p>
         <AboutContainer />
