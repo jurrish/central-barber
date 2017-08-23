@@ -12,6 +12,8 @@ class Navbar extends React.Component {
           <li> About Us </li>
           <li> Book an Appointment </li>
           <li> GPS US </li>
+          <li> link to Troy container </li>
+          <li> link to Ronnel container </li>
         </ul>
       </div>
     )

@@ -6,7 +6,7 @@ class Footer extends React.Component {
   render() {
     return(
       <div className='footer-div'>
-         Footer Content (contact either ronnel or troy + add info)
+         <a href="tel:123-456-7890">123-456-7890</a>
       </div>
     )
   }

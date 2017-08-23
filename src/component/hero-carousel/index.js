@@ -3,6 +3,14 @@ import React from 'react';
 const img1 = require('../../resources/carousel-pics/centralbarber/img1.jpg');
 const img2 = require('../../resources/carousel-pics/centralbarber/img2.jpg');
 const img3 = require('../../resources/carousel-pics/centralbarber/img3.jpg');
+const img4 = require('../../resources/carousel-pics/centralbarber/img4.jpg');
+const img5 = require('../../resources/carousel-pics/centralbarber/img5.jpg');
+const img6 = require('../../resources/carousel-pics/centralbarber/img6.jpg');
+const img7 = require('../../resources/carousel-pics/centralbarber/img7.jpg');
+const img8 = require('../../resources/carousel-pics/centralbarber/img8.jpg');
+const img9 = require('../../resources/carousel-pics/centralbarber/img9.jpg');
+const img10 = require('../../resources/carousel-pics/centralbarber/img10.jpg');
+const img11 = require('../../resources/carousel-pics/centralbarber/img11.jpg');
 
 import './_hero-carousel.scss';
 
@@ -13,9 +21,9 @@ class HeroCarousel extends React.Component {
       imageIndex: 0,
       imagesArray: undefined,
     }
-    // this.loadImages = this.loadImages.bind(this);
-    // this.nextImage = this.nextImage.bind(this);
-    // this.prevImage = this.prevImage.bind(this);
+    this.loadImages = this.loadImages.bind(this);
+    this.nextImage = this.nextImage.bind(this);
+    this.prevImage = this.prevImage.bind(this);
   }
 
   componentWillMount() {
@@ -30,20 +38,32 @@ class HeroCarousel extends React.Component {
   nextImage() {
     let currentIndex = this.state.imageIndex;
     currentIndex++;
+    if (currentIndex === this.state.imagesArray.length - 1){
+      return this.setState({ imageIndex: 0 })
+    }
     console.log('currentIndex ====> ', currentIndex)
+    console.log('state :::: ', this.state);
     return this.setState({ imageIndex: currentIndex })
   }
 
   prevImage(){
     let currentIndex = this.state.imageIndex;
     currentIndex--;
+
+    // const imageIndex = this.state.currentImageIndex === 0 ? this.props.images.length - 1 : this.state.currentImageIndex - 1;
+    //
+    //     this.setState({
+    //       currentImageIndex: imageIndex
+    //     })
+
     console.log('decrement index ===> ', currentIndex);
+    console.log('state::: ', this.state)
     return this.setState({ imageIndex: currentIndex })
   }
 
   loadImages() {
     let newImagesArray = [];
-    newImagesArray.push(img1, img2, img3);
+    newImagesArray.push(img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11);
     return this.setState({ imagesArray: newImagesArray });
   }
 
@@ -51,9 +71,13 @@ class HeroCarousel extends React.Component {
     // { this.loadImages() }
     return(
       <div className='hero-carousel-div'>
-        <button onClick={ this.nextImage.bind(this) }> increment </button>
-        <img src={ this.state.imagesArray[this.state.imageIndex] } />
-        <button onClick={ this.prevImage.bind(this) }> decrement </button>
+        <div className='button-holder-div'>
+          <button onClick={ this.nextImage.bind(this) }> increment </button>
+          <button onClick={ this.prevImage.bind(this) }> decrement </button>
+        </div>
+        <div className='hero-image-container'>
+          <img src={ this.state.imagesArray[this.state.imageIndex] } />
+        </div>
       </div>
     )
   }
