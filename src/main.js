@@ -1,7 +1,7 @@
 //npm modules
 import React from 'react';
 import ReactDom from 'react-dom';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {HashRouter, BrowserRouter, Route, Link} from 'react-router-dom';
 
 //app modules
 import Header from './component/header/index.js';
@@ -43,7 +43,6 @@ class App extends React.Component {
       <main className='main-div'>
         <Header />
         <Navbar />
-        <p> Central Barber </p>
         <AboutContainer />
         <HeroCarousel />
         <Footer />

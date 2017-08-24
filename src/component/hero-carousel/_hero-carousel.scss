@@ -1,9 +1,32 @@
 .hero-carousel-div {
   max-width: 800px;
   max-height: 400px;
+
+}
+.button-holder-div {
+  display: flex;
+  z-index: 1;
+
+  .right-button {
+    height: 50px;
+    z-index: 1;
+    margin-right: 20px;
+    margin-left: auto;
+    order: 2;
+    font-size: 50px;
+  }
+
+  .left-button {
+    height: 50px;
+    margin-left: 20px;
+    font-size: 50px;
+    z-index: 1;
+  }
 }
 
+
 img {
+  z-index: -9999999999999999;
   max-width: 100%;
   max-height: 100%;
 }

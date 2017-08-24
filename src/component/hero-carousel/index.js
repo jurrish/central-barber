@@ -72,8 +72,12 @@ class HeroCarousel extends React.Component {
     return(
       <div className='hero-carousel-div'>
         <div className='button-holder-div'>
-          <button onClick={ this.nextImage.bind(this) }> increment </button>
-          <button onClick={ this.prevImage.bind(this) }> decrement </button>
+          <div className='right-button' onClick={ this.nextImage.bind(this) }>
+            <i className='fa fa-angle-right fa-2x' />
+          </div>
+          <div className='left-button' onClick={ this.prevImage.bind(this) }>
+            <i className='fa fa-angle-left fa-2x' />
+          </div>
         </div>
         <div className='hero-image-container'>
           <img src={ this.state.imagesArray[this.state.imageIndex] } />

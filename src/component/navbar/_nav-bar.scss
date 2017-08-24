@@ -1,3 +1,11 @@
 .navbar-div {
   background: yellow;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+  }
 }

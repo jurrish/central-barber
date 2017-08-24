@@ -5,8 +5,9 @@ import './_footer.scss';
 class Footer extends React.Component {
   render() {
     return(
-      <div className='footer-div'>
-         <a href="tel:123-456-7890">123-456-7890</a>
+      <div className='footer-div' id='footer'>
+        <p> Give us a call! </p>
+        <a href="tel:206-471-6190">(206) 471-6190</a>
       </div>
     )
   }
