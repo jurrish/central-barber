@@ -1,14 +1,14 @@
 import React from 'react';
 
 const img1 = require('../../resources/carousel-pics/centralbarber/img1.jpg');
-const img2 = require('../../resources/carousel-pics/centralbarber/img2.jpg');
+// const img2 = require('../../resources/carousel-pics/centralbarber/img2.jpg');
 const img3 = require('../../resources/carousel-pics/centralbarber/img3.jpg');
 const img4 = require('../../resources/carousel-pics/centralbarber/img4.jpg');
 const img5 = require('../../resources/carousel-pics/centralbarber/img5.jpg');
 const img6 = require('../../resources/carousel-pics/centralbarber/img6.jpg');
 const img7 = require('../../resources/carousel-pics/centralbarber/img7.jpg');
 const img8 = require('../../resources/carousel-pics/centralbarber/img8.jpg');
-const img9 = require('../../resources/carousel-pics/centralbarber/img9.jpg');
+// const img9 = require('../../resources/carousel-pics/centralbarber/img9.jpg');
 const img10 = require('../../resources/carousel-pics/centralbarber/img10.jpg');
 const img11 = require('../../resources/carousel-pics/centralbarber/img11.jpg');
 
@@ -65,7 +65,7 @@ class HeroCarousel extends React.Component {
 
   loadImages() {
     let newImagesArray = [];
-    newImagesArray.push(img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11);
+    newImagesArray.push(img1, img3, img4, img5, img6, img7, img8, img10, img11);
     return this.setState({ imagesArray: newImagesArray });
   }
 
