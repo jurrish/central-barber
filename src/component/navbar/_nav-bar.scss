@@ -1,5 +1,14 @@
 .navbar-div {
   background: yellow;
+  display: flex;
+  justify-content:center;
+  max-width: 100%;
+  max-height: 45px;
+
+  ul {
+    display: inline-block;
+    justify-content: space-between;
+  }
 
   a {
     text-decoration: none;

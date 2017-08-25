@@ -9,6 +9,9 @@ import AboutContainer from './component/about-container/index.js';
 import HeroCarousel from './component/hero-carousel/index.js';
 import Footer from './component/footer/index.js';
 import Navbar from './component/navbar/index.js';
+import RonnelView from './component/ronnel/index.js';
+import TroyView from './component/troy/index.js';
+import Location from './component/location/index.js';
 
 import '../src/_main.scss';
 
@@ -18,9 +21,8 @@ class App extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      // budget: 400,
-      // expenses: [],
     };
+    
     this.getApp = this.getApp.bind(this);
   }
 
@@ -44,7 +46,10 @@ class App extends React.Component {
         <Header />
         <Navbar />
         <AboutContainer />
+        <RonnelView />
+        <TroyView />
         <HeroCarousel />
+        <Location />
         <Footer />
       </main>
     )

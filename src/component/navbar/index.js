@@ -20,6 +20,9 @@ class Navbar extends React.Component {
         <ul>
           <a href='#about'>About Us</a>
           <a href='#footer'>Make an Appointment</a>
+          <a href='#ronnel'>Ronnel</a>
+          <a href='#troy'>Troy</a>
+          <a href='#location'>Location</a>
         </ul>
       </div>
     )
