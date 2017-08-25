@@ -18,7 +18,7 @@ class HeroCarousel extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      imageIndex: 0,
+      imageIndex: 4,
       imagesArray: undefined,
     }
     this.loadImages = this.loadImages.bind(this);
@@ -55,6 +55,8 @@ class HeroCarousel extends React.Component {
     //     this.setState({
     //       currentImageIndex: imageIndex
     //     })
+    if(currentIndex === 0)
+      return this.setState({ imageIndex: this.state.imagesArray.length - 1 })
 
     console.log('decrement index ===> ', currentIndex);
     console.log('state::: ', this.state)
