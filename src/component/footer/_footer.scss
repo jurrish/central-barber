@@ -1,3 +1,22 @@
 .footer-div {
-  background: red;
+  background: grey;
+  color: white;
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+  }
+  
+  a:visited {
+    color: yellow;
+  }
 }
