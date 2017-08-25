@@ -6,7 +6,7 @@ class Header extends React.Component {
   render(){
     return(
       <div className='header-div'>
-        <img src={ require('./logo.jpg') } />
+        <img src={ require('./logo.jpg') } alt='Central Barber' />
       </div>
     )
   }

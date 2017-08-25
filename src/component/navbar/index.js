@@ -18,11 +18,10 @@ class Navbar extends React.Component {
     return (
       <div className='navbar-div'>
         <ul>
-          <a href='#about'>About Us</a>
-          <a href='#footer'>Make an Appointment</a>
-          <a href='#ronnel'>Ronnel</a>
-          <a href='#troy'>Troy</a>
-          <a href='#location'>Location</a>
+          <li><a href='#about'>About Us</a></li>
+          <li><a href='#footer'>Appointments</a></li>
+          <li><a href='#ronnel'>Stylists</a></li>
+          <li><a href='#location'>Location</a></li>
         </ul>
       </div>
     )

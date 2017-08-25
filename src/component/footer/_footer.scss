@@ -5,6 +5,15 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  border-top: black solid 2px;
+
+  .fa-yelp {
+    color: red;
+  }
+
+  .fa-phone {
+    color: green;
+  }
 
   a {
     display: block;
@@ -15,7 +24,7 @@
   a:hover {
     color: red;
   }
-  
+
   a:visited {
     color: yellow;
   }
