@@ -6,6 +6,7 @@ import {HashRouter, BrowserRouter, Route, Link} from 'react-router-dom';
 //app modules
 import Header from './component/header/index.js';
 import AboutContainer from './component/about-container/index.js';
+import Hours from './component/hours/index.js';
 import HeroCarousel from './component/hero-carousel/index.js';
 import Footer from './component/footer/index.js';
 import Navbar from './component/navbar/index.js';
@@ -22,7 +23,7 @@ class App extends React.Component {
     super(props);
     this.state = {
     };
-    
+
     this.getApp = this.getApp.bind(this);
   }
 
@@ -46,6 +47,7 @@ class App extends React.Component {
         <Header />
         <Navbar />
         <AboutContainer />
+        <Hours />
         <RonnelView />
         <TroyView />
         <HeroCarousel />
