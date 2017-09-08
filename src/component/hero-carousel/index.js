@@ -80,9 +80,9 @@ class HeroCarousel extends React.Component {
           <div className='left-button' onClick={ this.prevImage.bind(this) }>
             <i className='fa fa-angle-left fa-2x' />
           </div>
-        </div>
-        <div className='hero-image-container'>
-          <img src={ this.state.imagesArray[this.state.imageIndex] } />
+          <div className='hero-image-container'>
+            <img src={ this.state.imagesArray[this.state.imageIndex] } />
+          </div>
         </div>
       </div>
     )
