@@ -27,11 +27,11 @@ class Navbar extends React.Component {
   onScroll () {
 //scrollY @ 163 = start of div
 
-    if(window.scrollY >= 163) {
+    if(window.scrollY >= 210) {
       this.setState({ isFixed: true })
     }
 
-    if(this.state.isFixed && window.scrollY <= 163) {
+    if(this.state.isFixed && window.scrollY <= 210) {
       this.setState({ isFixed: false })
     }
   }
@@ -43,7 +43,7 @@ class Navbar extends React.Component {
 
   render() {
 
-    let createdClass = this.state.isFixed ? ' navbar-div navbar-div-fixed' : 'navbar-div';
+    let createdClass = this.state.isFixed ? 'navbar-div navbar-div-fixed' : 'navbar-div';
 
     return (
       <div className={ createdClass }>
