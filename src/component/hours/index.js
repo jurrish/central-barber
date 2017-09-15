@@ -6,14 +6,14 @@ class Hours extends React.Component {
   render() {
     return(
       <div className='hours-div'>
-        <p>Hours: </p>
+        <p><i className='fa fa-clock-o 4x'></i>Hours</p>
         <ul>
-          <li>Tuesday-Friday: 10am-7pm</li>
-          <li>Saturday: 8am-4pm</li>
-          <li>Sunday/Monday: CLOSED </li>
+          <li>Tuesday-Friday : 10am-7pm</li>
+          <li>Saturday : 8am-4pm</li>
+          <li>Sunday/Monday : CLOSED </li>
         </ul>
         <div className='address-div'>
-          <p> Address: </p>
+          <p><i className='fa fa-map-marker'></i>Address</p>
           <ul>
             <li> 308 22nd Ave S. </li>
             <li> Suite 102 </li>
